@@ -54,7 +54,7 @@ async function fetchNewToken() {
     await page.setViewport({ width: 1366, height: 768 });
 
     console.log('[🌐] Đang truy cập HitClub...');
-    await page.goto('https://i.hit.club/login', { 
+    await page.goto('https://i.hit.club/', { 
       waitUntil: 'networkidle2',
       timeout: 60000 
     });
